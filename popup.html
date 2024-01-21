@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <script src="popup.js"></script>
+
   <style>
     * {
       box-sizing: border-box;
@@ -10,16 +10,62 @@
       padding: 0px;
     }
 
+    body {
+      background: black;
+      color: white;
+    }
+
     img {
+      display: block;
       min-width: 100px;
       max-width: 100%;
-      max-height: 250px;
+      max-height: 420px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      padding: 0px;
+      padding-top: 5px;
+    }
+
+    #imageContainer {
+      display: grid;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    #imageContainer>div {
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #settingswrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      gap: 8px;
     }
   </style>
 </head>
 
 <body style="width:780px;height:600px;">
+  <div id="settingswrapper">
+    <input type="number" id="minsize" />
+    <label for="minsize">Min Size</label>
+    <input type="checkbox" id="hasaltcheckbox" />
+    <label for="hasaltcheckbox">Has Alt</label>
+  </div>
   <div id="imageContainer"></div>
 </body>
 
 </html>
+<script src="popup.js"></script>

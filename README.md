@@ -5,7 +5,9 @@ This is a simple Chrome extension that fetches all image URLs from the current t
 ## Features
 
 - Fetches all image URLs from the current tab
-- Displays the images in a popup
+- Displays the images in a popup and an alt text if available
+- Allows users to filter based on min size of image
+- Allows users to filter based on whether image has an alt text or not
 
 ## Installation
 
